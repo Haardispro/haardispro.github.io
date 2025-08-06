@@ -81,3 +81,99 @@ body{
 main{
   flex:1;
 }
+
+/* Mobile devices (up to 480px) */
+@media screen and (max-width: 480px) {
+  body {
+    margin: 10pt;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 14px;
+  }
+  
+  img {
+    width: 150px;
+    height: 150px;
+  }
+  
+  a {
+    font-size: 12pt;
+    padding: 5px;
+    display: block;
+    margin: 5px 0;
+  }
+  
+  .contact {
+    height: auto;
+    min-height: 55px;
+  }
+  
+  .links {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Tablet devices (481px to 768px) */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  body {
+    margin: 12pt;
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+  
+  img {
+    width: 175px;
+    height: 175px;
+  }
+  
+  a {
+    padding: 9px;
+  }
+}
+
+/* Small desktop/large tablet (769px to 1024px) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  body {
+    margin: 14pt;
+    margin-left: 9%;
+    margin-right: 9%;
+  }
+}
+
+/* Large screens (above 1200px) */
+@media screen and (min-width: 1200px) {
+  body {
+    margin-left: 15%;
+    margin-right: 15%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Landscape orientation adjustments */
+@media screen and (orientation: landscape) and (max-height: 600px) {
+  body {
+    margin: 8pt;
+  }
+  
+  .contact {
+    height: auto;
+    min-height: 40px;
+  }
+}
+
+/* Print styles */
+@media print {
+  body {
+    color: black;
+    background-color: white;
+    margin: 1in;
+  }
+  
+  a {
+    color: black;
+    text-decoration: underline;
+  }
+}
